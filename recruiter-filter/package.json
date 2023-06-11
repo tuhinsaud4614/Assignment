@@ -1,5 +1,5 @@
 {
-  "homepage": "http://tuhinsaud4614.github.io/Assignment",
+  "homepage": "http://tuhinsaud4614.github.io/Assignment/recruiter-filter",
   "name": "recruiter-filter",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "clsx": "^1.2.1",
