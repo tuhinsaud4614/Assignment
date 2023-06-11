@@ -1,4 +1,5 @@
 import Select from "./components/Select";
+import { filterActions } from "./constants";
 import { useFilterDispatch } from "./hook";
 
 export default function Locations() {
@@ -10,7 +11,7 @@ export default function Locations() {
       label="Location"
       onChange={(event) => {
         dispatch({
-          type: "LOCATION_ADD",
+          type: filterActions.locationAdd,
           payload: event.target.value,
         });
       }}

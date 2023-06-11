@@ -1,4 +1,5 @@
 import * as React from "react";
+import { filterActions } from "./constants";
 
 export const FilterStateContext = React.createContext();
 export const FilterDispatchContext = React.createContext();
@@ -13,26 +14,27 @@ const filterReducer = (state, action) => {
   const jobTitles = new Set(state.jobTitles);
   const skills = new Set(state.skills);
   switch (action.type) {
-    case "JOB_TITLES_ADD":
+    case filterActions.jobTitlesAdd:
       jobTitles.add(action.payload);
       return { ...state, jobTitles };
-    case "JOB_TITLES_REMOVE":
+    case filterActions.jobTitlesRemove:
       jobTitles.delete(action.payload);
       return { ...state, jobTitles };
-    case "SKILLS_ADD":
+    case filterActions.skillsAdd:
       skills.add(action.payload);
       return { ...state, skills };
-    case "SKILLS_REMOVE":
+    case filterActions.skillsRemove:
       skills.delete(action.payload);
       return { ...state, skills };
-    case "LOCATION_ADD":
+    case filterActions.locationAdd:
       return { ...state, location: action.payload };
+
     default:
       throw new Error("Unknown action type");
   }
 };
 
-export default function FilterContextProvider({children}) {
+export default function FilterContextProvider({ children }) {
   const [state, dispatch] = React.useReducer(filterReducer, initialFilterState);
 
   return (
