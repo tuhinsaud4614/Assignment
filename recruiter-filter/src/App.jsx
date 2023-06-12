@@ -3,22 +3,25 @@ import JobTitleList from "./JobTitleList";
 import Locations from "./Locations";
 import Skills from "./Skills";
 import SkillList from "./SkillList";
-import FilteredItems from "./FilteredItems";
+import FilteredItems from "./components/FilteredItems";
 import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <>
       <Sidebar>
+        <h2 className="text-xl font-semibold mb-4">Filters</h2>
         <JobTitles />
         <JobTitleList />
+        <hr className="h-px my-4 bg-gray-200 border-0" />
         <Locations />
+        <hr className="h-px my-4 bg-gray-200 border-0" />
         <Skills />
         <SkillList />
       </Sidebar>
       <main className="p-4 ml-64">
         <h2 className="text-2xl font-semibold mb-4">Seekers</h2>
-        <div className="w-full max-w-md mx-auto p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+        <div className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow">
           <FilteredItems />
         </div>
       </main>

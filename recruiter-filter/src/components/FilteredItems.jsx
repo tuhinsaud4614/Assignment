@@ -1,7 +1,7 @@
 import * as React from "react";
-import { useFilterState } from "./hook";
-import seekers from "./demo-data";
-import Seeker from "./components/Seeker";
+import { useFilterState } from "../hook";
+import seekers from "../demo-data";
+import Seeker from "./Seeker";
 
 export default function FilteredItems() {
   const { jobTitles, location, skills } = useFilterState();
@@ -13,7 +13,7 @@ export default function FilteredItems() {
 
     const jobTitlesArr = [...jobTitles].map((item) => item.toLowerCase());
     const skillsArray = [...skills].map((item) => item.toLowerCase());
-    
+
     return seekers.filter((seeker) => {
       return (
         (location && seeker.location.search(location) !== -1) ||
@@ -24,7 +24,12 @@ export default function FilteredItems() {
   }, [jobTitles, location, skills]);
 
   if (filteredSeekers.length === 0) {
-    return <p className="text-red-500">No seeker found!</p>;
+    return (
+      <>
+        <p className="text-red-500 text-xl">No seeker found!</p>
+        <p className="text-gray-500 mt-3">Select a location or add job titles or skills</p>
+      </>
+    );
   }
 
   return (
