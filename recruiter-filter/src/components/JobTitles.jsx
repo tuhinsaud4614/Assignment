@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Input from "./Input";
 import { useFilterDispatch } from "../hook";
 import { filterActions } from "../constants";

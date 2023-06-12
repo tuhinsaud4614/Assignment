@@ -1,5 +1,7 @@
 # Recruiter Filter
 
+> **_NOTE:_** Click `enter` key for any `input` field to add on filter list
+
 Demo Data. You can filter by skills, position and location.
 ```js
 [

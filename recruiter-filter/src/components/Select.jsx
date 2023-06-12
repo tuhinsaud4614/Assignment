@@ -1,5 +1,5 @@
-import { clsx } from "clsx";
 import * as React from "react";
+import { clsx } from "clsx";
 
 export default function Select(props) {
   const id = React.useId();
