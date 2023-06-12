@@ -1,8 +1,8 @@
-import JobTitles from "./JobTitles";
-import JobTitleList from "./JobTitleList";
-import Locations from "./Locations";
-import Skills from "./Skills";
-import SkillList from "./SkillList";
+import JobTitles from "./components/JobTitles";
+import JobTitleList from "./components/JobTitleList";
+import Locations from "./components/Locations";
+import Skills from "./components/Skills";
+import SkillList from "./components/SkillList";
 import FilteredItems from "./components/FilteredItems";
 import Sidebar from "./components/Sidebar";
 

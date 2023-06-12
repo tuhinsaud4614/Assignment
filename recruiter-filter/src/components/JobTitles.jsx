@@ -1,7 +1,7 @@
 import React from "react";
-import Input from "./components/Input";
-import { useFilterDispatch } from "./hook";
-import { filterActions } from "./constants";
+import Input from "./Input";
+import { useFilterDispatch } from "../hook";
+import { filterActions } from "../constants";
 
 export default function JobTitles() {
   const [jobTitle, setJobTitle] = React.useState("");

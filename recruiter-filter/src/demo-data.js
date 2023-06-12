@@ -9,7 +9,7 @@ const seekers = [
     },
     {
         id: crypto.randomUUID(),
-        name: "Bonnie Green",
+        name: "Michael Gough",
         skills: ["React", "Node Js", "Express Js"],
         location: "CHANDPUR",
         positions: ["MERN Stack Engineer"],
@@ -17,7 +17,7 @@ const seekers = [
     },
     {
         id: crypto.randomUUID(),
-        name: "Michael Gough",
+        name: "Bonnie Green",
         skills: ["Python", "Numpy", "Pandas"],
         location: "CHATTOGRAM",
         positions: ["Data Scientist"],
@@ -25,7 +25,7 @@ const seekers = [
     },
     {
         id: crypto.randomUUID(),
-        name: "Thomes Lean",
+        name: "Lana Byrd",
         skills: ["Python", "Html", "Css"],
         location: "KHULNA",
         positions: ["Software Engineer"],

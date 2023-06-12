@@ -1,6 +1,6 @@
-import Select from "./components/Select";
-import { filterActions } from "./constants";
-import { useFilterDispatch } from "./hook";
+import Select from "./Select";
+import { filterActions } from "../constants";
+import { useFilterDispatch } from "../hook";
 
 export default function Locations() {
   const dispatch = useFilterDispatch();

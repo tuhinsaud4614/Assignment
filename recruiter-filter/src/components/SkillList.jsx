@@ -1,6 +1,6 @@
-import { useFilterDispatch, useFilterState } from "./hook";
-import Badge from "./components/Badge";
-import { filterActions } from "./constants";
+import { useFilterDispatch, useFilterState } from "../hook";
+import Badge from "./Badge";
+import { filterActions } from "../constants";
 
 export default function SkillList() {
   const { skills } = useFilterState();
